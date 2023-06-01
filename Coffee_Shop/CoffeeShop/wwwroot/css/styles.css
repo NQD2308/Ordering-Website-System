@@ -1,0 +1,769 @@
+/* --------------------------------------------- */
+/* -------------- DEFAULT SETTING -------------- */
+/* --------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 20px;
+    /* text-transform: uppercase; */
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    color: #7a431d;
+    background-color: #e29a3d;
+    text-rendering: optimizeLegibility;
+}
+
+/* --------------------------------------------- */
+/* ------------ REUSABLE COMPONENT ------------- */
+/* --------------------------------------------- */
+section{
+    padding: 40px;
+}
+
+ul, li, ol{
+    padding: 0;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    text-decoration: none;
+    color: rgb(86,55,39);
+    background-color: rgb(222,158,72);
+    padding: 15px 25px;
+    margin: 30px;
+    border-radius: 40%;
+    transition: all .3s;
+    margin-right: 40px;
+    font-size: 23px;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: rgb(216, 139, 51);
+    color: #FFFFFF;
+}
+
+.btn-add-product{
+    background-color: transparent;
+    color: rgb(86,55,39);
+    font-size: 18px;
+    padding: 0px;
+    margin-left: 10px;
+    border-radius: 100px;
+}
+
+.btn-add-product:hover{
+    transition: all 0.25s ease-in;
+    margin-left: 20px;
+}
+
+.row{
+    max-width: 1400px;
+    margin: 0 auto; 
+}
+
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+h2, h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h3{
+    color: #372C2E;
+    font-size: 180%;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h3:after{
+    content: " ";
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: #563727;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.p-long{
+    text-align: center;
+    color: #7a431d;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 82%;
+    margin-left: 9%;
+    line-height: 140%;
+}
+
+.small-icon{
+    color: #7a431d;
+    padding-right: 10px;
+}
+
+/* --------------------------------------------- */
+/* ---------------- Button go to --------------- */
+/* --------------------------------------------- */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #7a431d;
+    color: white;
+    cursor: pointer;
+    padding: 15px 18px;
+    border-radius: 50%;
+    transition: all .25s ease-in;
+}
+
+#myBtn:hover {
+    color: #DE9E48;
+    transition: all .25s ease-in;
+}
+
+/* --------------------------------------------- */
+/* ---------------- HEADER --------------------- */
+/* --------------------------------------------- */
+header{
+    background-image: linear-gradient(rgba(122,67,29,0.100),rgba(222,158,72,0.85)), url("../img/CoffeeAndJazz_resized.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 75vh; /* view height */
+    background-attachment: fixed;
+}
+
+.logo{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.logo a{
+    color: #7a431d;
+    font-size: 45px;
+    /* position: absolute; */
+    /* float: left; */
+    /* margin-left: 50px; */
+    text-decoration: none;
+}
+
+.heading-main-text{
+    color: rgb(86,55,39);
+    position: absolute;
+    top: 35%;
+    left: 8%;
+    font-size: 270%;
+    width: 700px;
+}
+
+.bottom{
+    position: absolute;
+    top: 45%;
+    left: 8%;
+    margin: 50px;
+    margin-top: 65px;
+    width: 500px;
+}
+
+button{
+    border: none;
+    outline: none;
+}
+
+.main-nav{
+    float: right ;
+    list-style: none;
+    /* margin-right: 30px; */
+    margin-top: 35px;
+}
+
+.main-nav{
+    display: flex;
+}
+
+.main-nav li {
+    margin-right: 30px;
+}
+
+    .main-nav li b {
+        color: rgb(224, 176, 120);
+    }
+
+.main-nav li a,button{
+    text-decoration: none;      /* Lệnh loại bỏ dấu gạch chân */
+    background-color:transparent;
+    color: rgb(224, 176, 120);
+    font-weight: 700;
+    font-size: 110%;
+    padding: 3px;
+}
+
+.main-nav li button{
+    margin-top: -3px;
+}
+
+    .main-nav li a:hover, /* Lệnh di chuột giữa các hiệu ứng */
+    .main-nav li a:active {
+        border-bottom: 2px solid rgb(219, 160, 92);
+        transition: border-bottom 0.1s;
+    }/* Lệnh click chuột */
+
+
+.about-pic{
+    position: relative;
+    margin-top: 50px;
+}
+
+.about-pic img{
+    width: 93%;
+    border-radius: 20px;
+    border: 4px solid #9c4519;
+    box-shadow: 8px 8px 12px 1px #202020 ;
+    transition: all .4s;
+    /* x-y-độ mờ-độ rộng-màu */
+}
+
+.pic-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #DE9E48;
+    transform: translate(-50%,100%);
+    opacity: 0;
+    transition: all .4s;
+}
+
+.about-pic:hover img,
+.about-pic:active img{
+    filter: blur(2px) brightness(50%);
+}
+
+.about-pic:hover .pic-title,
+.about-pic:active .pic-title{
+    transform: translate(-50%,-50%);
+    opacity: 1;
+}
+
+@media screen and (max-width: 960px){
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .smlgrn {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 590px){
+    .main-nav {
+        flex: none;
+        width: 0 0 auto;
+    }
+}
+
+/*----------------- Modal Content ----------------*/
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    scroll-behavior: smooth;
+}
+
+.modal-content {
+    background-color: rgb(226, 154, 61);
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 1050px;
+    max-width: 80%;
+    margin-bottom:50px;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 20px !important;
+    border-radius: 20px !important;
+}
+
+.close {
+    color: #563727;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*------------------ Menu order -----------------*/
+
+.menu-top i{
+    margin-top: 6px;
+}
+
+.modal p.title-menu, i {
+    vertical-align: middle;
+    font-style: italic;
+    font-size: 25px;
+    margin: 2px;
+}
+
+.row-tag-menu{
+    width:500px;
+}
+
+.fill .shopping {
+    position: fixed;
+    cursor: pointer;
+    margin: 0 0 0 920px;
+    /* z-index: 99; */
+}
+
+.fill {
+    justify-content: space-between;
+    display: flex;
+    margin: 30px 0 0 0;
+}
+
+    .fill .shopping a {
+        display: flex;
+        text-decoration: none;
+    }
+
+
+.fill .shopping a h5 {
+    position: absolute;
+    left: 130%;
+    bottom: 55%;
+    background: #563727;
+    color: rgb(226, 154, 61);
+    border-radius: 20px;
+    padding: 0 11px;
+    padding-bottom: 5px;
+    font-size: 25px;
+}
+
+    .fill .shopping i {
+        /*margin-left: -230%;*/
+        padding: 40%;
+        background: #563727;
+        border-radius: 20px;
+        font-size: 30px;
+        color: rgb(226, 154, 61);
+    }
+
+.fill ul{
+    list-style-type: none;
+    display: flex;
+    float: right;
+    margin-right: 50px;
+}
+
+.fill ul li a{
+    /* background-color: #7a431d; */
+    text-decoration: none;
+    color: #372C2E;
+    text-transform: none;
+    margin: 0 10px;
+    padding: 0 10px;
+    border: 1px #7a431d solid;
+    border-radius: 20px;
+    transition: all 0.2s ease-in;
+    
+}
+
+.fill ul li a:hover{
+    background-color: #7a431d;
+    color: #DE9E48;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.titleKindDrink{
+    margin-top: 50px;
+}
+
+.discr{
+    text-transform: lowercase;
+    line-height: 100%;
+    text-align: left;
+    text-transform: none;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.tag-drink {
+    width:480px;
+    height: auto;
+    margin-top: 12px;
+    border: 1px solid #9c4519;
+    border-radius: 10px;
+    margin:10px;
+}
+
+.info-product p{
+    /* background-color: #ff5500; */
+    justify-content: center;
+}
+
+    .tag-drink img {
+        /* background-color: #ff5500; */
+        width: 230px;
+        height: auto;
+        padding: 5px;
+        border-radius: 10px;
+        margin: 0 3px 3px 5px;
+        display: block;
+    }
+
+    .tag-drink p {
+        display: flex
+    }
+
+.product-name {
+    justify-content: center;
+    margin: 5px 5px 10px 5px;
+}
+
+.product{
+    display: flex;
+    justify-content:space-between;
+}
+
+.quantity{
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    width: 120px;
+    height: 30px;
+    border: 1px solid #9c4519;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 0px 10px ;
+    /* vertical-align: middle; */
+}
+
+.quantity p{
+    vertical-align: middle;
+}
+
+.quantity i{
+    padding-top: 5px;
+    font-size: 18px;
+    color: #9c4519;
+    transition: all .25s ease-in;
+}
+
+.quantity i:hover {
+    transition: all .2s ease-in;
+    color: #FFFF;
+    cursor: pointer;
+}
+
+/* --------------------------------------------- */
+/* ---------------- MENU SECTION --------------- */
+/* --------------------------------------------- */
+
+.menu-section{
+    background-image: linear-gradient(rgba(122,67,29,0.8),rgba(222,158,72,0.85)), url("../img/viewnemu.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.menu-section h3{
+    margin-bottom: 40px;
+}
+
+.menu-box{
+    background-color: #dba967;
+    width: 70%;
+    height: 435px;
+    border-radius: 20px;
+    border: 4px solid #9c4519;
+}
+
+.kindofmenu{
+    background-color: #e2a04a;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom: 2px solid #9c4519;
+}
+
+.menu-box li{
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    list-style: none;
+}
+
+h4{
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(160, 114, 55);
+    padding: 20px;
+}
+
+/* --------------------------------------------- */
+/* ---------------- VIEW SECTION --------------- */
+/* --------------------------------------------- */
+
+.view-img{
+    width: 50%;
+    border-radius: 30px;
+    margin-left: 25%;
+    margin-top: 20px;
+    display: block;
+}
+
+.note-img{
+    margin-top: 50px;
+    text-align: justify;
+    margin-bottom: 40px;
+    float: right;
+}
+
+.col{
+    display: flex;
+    justify-content: center;
+}
+
+/* --------------------------------------------- */
+/* ---------------- COFFEE SECTION ------------- */
+/* --------------------------------------------- */
+
+.coffee-section{
+    background-image: linear-gradient(rgba(122,67,29,0.8),rgba(222,158,72,0.85)), url("../img/coffee-map1.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.coffee-box{
+    border: 3px solid #7a431d;
+    border-radius: 20px;
+    height: 510px;
+    margin-top: 50px;
+}
+
+.coffee-img{
+    border: 3px solid #372C2E;
+    width: 50%;
+    border-radius: 20px;
+    margin: 20px 0 0 20px;
+    display: inline;
+}
+
+.coffee-box p{
+    color: #d6c1a5;
+    text-align:justify;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.title-coffee-box{
+    font-size: 25px;
+    
+    margin-left: 25px;
+    position: absolute;
+    top: 154px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: #372C2E;
+    border: 3px solid #7a431d;
+    padding: 0 10px 0 10px;
+}
+
+.title-coffee-box1{
+    font-size: 25px;
+    /*font-weight: 250%;*/
+    margin-left: 10px;
+    position: absolute;
+    top: 57.5px;
+    margin-left: 30px;
+    color: #372C2E;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 3px solid #7a431d;
+    padding: 0 10px 0 10px;
+}
+
+/* --------------------------------------------- */
+/* --------------- SERVICE SECTION ------------- */
+/* --------------------------------------------- */
+
+.service-box{
+    margin-top: 30px;
+}
+
+.service-box img{
+    width: 30%;
+    border-radius: 20px;
+    margin: 30px;
+    float: left;
+}
+
+.service-box p{
+    border: 3px solid brown;
+    border-radius: 50px;
+    /* margin-top: 20px; */
+    width: 60%;
+    padding: 20px;
+    text-align:justify;
+    margin-left: 20px;
+    float: left;
+}
+
+.bida-service-box{
+    /* margin-top: 30px; */
+}
+
+.bida-service-box img{
+    width: 30%;
+    border-radius: 20px;
+    margin: 50px;
+    float: right;
+}
+
+.bida-service-box p{
+    border: 3px solid brown;
+    border-radius: 50px;
+    /* margin-top: 20px; */
+    padding: 20px;
+    width: 60%;
+    text-align: justify;
+    float: left;
+}
+
+.content-book h5{
+    width: 30%;
+    margin-top: 30px;
+    margin-left: 80px;
+    font-size: 25px;
+    float: left;
+}
+
+.content-bida h5{
+    /* width: 30%; */
+    margin-top: 50px;
+    /* margin-left: 360px; */
+    /* padding: 0 0 0 110px; */
+    margin-right: 7%;
+    font-size: 25px;
+    float: right;
+}
+
+/* --------------------------------------------- */
+/* -------------- PRODUCTS SECTION ------------- */
+/* --------------------------------------------- */
+
+.product-section{
+    background-image: linear-gradient(rgba(122,67,29,0.8),rgba(222,158,72,0.85)), url("../img/backgroundtool-product1.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.pic-product{
+    position: relative;
+}
+
+.product-box img{
+    width: 300px;
+    border-radius: 20px;
+    border: 3px solid rgb(107, 68, 45);
+    position: relative;
+}
+
+.product-box p{
+    position: absolute;
+    color: #dba967;
+    /* left: 43%;
+    top: 50%; */
+}
+
+.title-product{
+    padding: 50px 130px 20px 130px;
+    text-align: center;
+    color: #372C2E; 
+}
+
+/* --------------------------------------------- */
+/* --------------- CONTACT SECTION ------------- */
+/* --------------------------------------------- */
+
+.information{
+    list-style: none;
+    line-height: 200%;
+    margin-top: 20px;
+    /*white-space: 1px;*/
+    font-size: 90%;
+}
+
+.information .small-icon{
+    color: #7a431d;
+}
+
+.information .small-icon:hover,
+.information .small-icon:active{
+    transform: scale(1.3);
+}
+
+.social-icons{    
+    margin-top: 50px;
+    list-style: none;
+
+}
+
+.social-icons li{
+    display: inline-block;
+    font-size: 230%;
+    margin-right: 40px;
+    color: #e0deda;
+}
+
+.social-icons li i{
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.social-icons li i:hover,
+.information li i:active{
+    transform: scale(1.3);
+    color: #563727;
+}

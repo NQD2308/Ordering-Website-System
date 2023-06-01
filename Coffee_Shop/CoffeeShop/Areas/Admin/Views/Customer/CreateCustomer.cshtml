@@ -1,0 +1,91 @@
+﻿@model CoffeeShop.Models.Customer
+
+<style>
+    body {
+        background-image: none;
+        font-size: 16px;
+    }
+
+    .from-of-customer {
+        height: 300px;
+    }
+
+    .from-of-customer {
+    padding: 25px;
+    margin-left: 30px;
+    width: 450px;
+}
+
+    .from-of-customer input {
+        float: right;
+        width: 230px;
+        padding: 2px 5px;
+        border-radius: 6px;
+        font-size: 16px;
+    }
+
+    .from-of-Editcustomer {
+        padding: 25px;
+        margin-left: 30px;
+        width: 420px;
+    }
+
+    .from-of-customer .form-group label {
+        font-size:16px;
+    }
+
+    .span {
+        display: block;
+        font-size: 14px;
+    }
+</style>
+
+<div style="display:block">
+    <div style="margin: 10px 40px">
+        <h2> Create new customer</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <form class="from-of-customer" asp-action="SaveCustomer">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <span asp-validation-for="Name" class="text-danger span"></span>
+                <span asp-validation-for="PhoneNumber" class="text-danger span"></span>
+                <span asp-validation-for="Address" class="text-danger span"></span>
+
+                @*<div class="form-group">
+                    <label asp-for="Account" class="control-label">Email</label>
+                    <input asp-for="Account" class="form-control" />
+                    <span asp-validation-for="Account" class="text-danger"></span>
+                </div>*@
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PhoneNumber" class="control-label"></label>
+                    <input asp-for="PhoneNumber" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Address" class="control-label"></label>
+                    <input asp-for="Address" class="form-control" />
+                </div>
+                @*<div class="form-group">
+                    <label asp-for="Password" class="control-label"></label>
+                    <input asp-for="Password" type="password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>*@
+                @*<div class="form-group">
+                    <label asp-for="Password" class="control-label">Confirm password</label>
+                    <input asp-for="Password" type="password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>*@
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+

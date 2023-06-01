@@ -1,0 +1,48 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout_SignUp.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="box">
+            <div class="form">
+                <h2>Sign Up</h2>
+                <form action="">
+                    <table>
+                        <tr>
+                            <td asp-for="Account">Email</td>
+                            <th asp-for="Account"><input type="text" required></th>
+                            @*<span asp-validation-for="Account"></span>*@
+                        </tr>
+                        <tr>
+                            <td asp-for="Name">Full name</td>
+                            <th asp-for="Name"><input type="text" required></th>
+                        </tr>
+                        <tr>
+                            <td asp-for="PhoneNumber">Phone number</td>
+                            <th asp-for="PhoneNumber"><input type="text" required></th>
+                        </tr>
+                        <tr>
+                            <td asp-for="Address">Address</td>
+                            <th asp-for="Address"><input type="text" required></th>
+                        </tr>
+                        <tr>
+                            <td asp-for="Password">Password</td>
+                            <th asp-for="Password"><input type="password" required></th>
+                        </tr>
+                        <tr>
+                            <td>Re-password</td>
+                            <th><input type="password"></th>
+                        </tr>
+
+                    </table>
+                    <div class="btnLogin">
+                        <input type="submit" value="Login" />
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

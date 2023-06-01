@@ -1,0 +1,52 @@
+﻿@model List<CoffeeShop.Models.Genre>
+
+<style>
+    body {
+        background-image: none;
+        font-size: 16px;
+    }
+
+    .table-list-products td, th, a {
+        font-size: 16px;
+    }
+
+    .table-of-list thead th,
+    .table-of-list tbody td {
+        text-align: center;
+    }
+
+
+
+</style>
+
+
+<div style="display:block; width:850px">
+    <div style="margin: 10px 40px; display:flex; justify-content: space-between">
+        <h2> Table list genre</h2>
+        <a class="btn" asp-action="CreateGenre">Create new genres</a>
+    </div>
+    <form style="margin-left: 30px; background: none;">
+        <table class="table-of-list">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Item</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="table-list-products">
+                        <td>@item.GenreId</td>
+                        <td>@item.GenreName</td>
+                        <td>
+                            <a asp-action="EditGenre" asp-route-id="@item.GenreId">Edit</a> ||
+                            <a asp-action="DeleteGenre" asp-route-id="@item.GenreId">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </form>
+</div>

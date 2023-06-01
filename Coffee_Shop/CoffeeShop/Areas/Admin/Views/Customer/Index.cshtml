@@ -1,0 +1,65 @@
+﻿@model List<CoffeeShop.Models.Customer>
+
+<style>
+    body {
+        background-image: none;
+        font-size: 16px;
+    }
+
+    .table-of-customerlist td, th {
+        font-size: 16px;
+    }
+
+    .table-of-customerlist thead th,
+    .table-of-customerlist tbody td, a {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .table-of-customerlist {
+        width: 1250px;
+    }
+
+        .table-of-customerlist .left {
+            text-align: left;
+        }
+
+</style>
+
+
+<div style="display:block; width:1260px">
+    <div style="margin: 10px 40px; display:flex; justify-content: space-between">
+        <h2> Table list customer</h2>
+        <a class="btn" asp-action="CreateCustomer">Create new customer</a>
+    </div>
+    <form style="margin-left: 30px; background: none;">
+        <table class="table-of-customerlist">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Full name</th>
+                    <th>Phone number</th>
+                    <th>Address</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="table-list-products">
+                        <td>@item.Id</td>
+                        <td class="left">@item.Name</td>
+                        <td>@item.PhoneNumber</td>
+                        <td class="left">@item.Address</td>
+                        <td class="left">@item.Account</td>
+                        <td>
+                            <a asp-action="EditCustomer" asp-route-id="@item.Id">Edit</a> ||
+                            <a asp-action="DeleteCustomer" asp-route-id="@item.Id">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </form>
+</div>

@@ -1,0 +1,59 @@
+﻿@inject IGenreRepository GenreRepository
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Admin Dashboard | By Code Info</title>
+    <link rel="stylesheet" href="~/css/style_dashboard.css" />
+    <link rel="stylesheet" href="~/css/ProductManage.css">
+    @*<link rel="stylesheet" href="~/css/login.css">*@
+    <link rel="stylesheet" href="~/css/styles_admin.css">
+    <!-- Font Awesome Cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    @*<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />*@
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="../html/index.html">Jazz Cafe</a>
+            <!-- <div class="search_box">
+                <input type="text" placeholder="Search EasyPay">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </div> -->
+        </div>
+
+        <div class="header-icons">
+            <!-- <i class="fas fa-bell"></i> -->
+            <!-- <div class="account">
+                <img src="../img/Cafe_au_lait.jpg" alt="">
+                <h4></h4>
+            </div> -->
+        </div>
+    </header>
+    
+    <div class="container">
+        <nav>
+            <div class="side_navbar">
+                <span class="title-menu">Main Menu</span>
+                <a asp-action="Index" asp-controller="Dashboard" asp-area="Admin">Dashboard</a>
+                <a asp-action="Products" asp-controller="Home" asp-area="Admin">Product</a>
+                <a asp-action="Index" asp-controller="Genre" asp-area="Admin">Genre</a>
+                <a href="#">Staff</a>
+                <a asp-action="Customers" asp-controller="Customer" asp-area="Admin">Customer</a>
+                <a href="#">My Account</a>
+
+                <!-- <div class="links">
+                <span>Quick Link</span>
+                <a href="#">Paypal</a>
+                <a href="#">EasyPay</a>
+                <a href="#">SadaPay</a>
+                </div> -->
+            </div>
+        </nav>
+
+       @RenderBody()
+    </div>
+
+</body>
+</html>

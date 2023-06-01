@@ -1,0 +1,272 @@
+﻿@model CoffeeShop.Models.MenuModel;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display+SC&display=swap"
+        rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    @*CSS*@
+    <link rel="stylesheet" href="~/css/styles.css">
+    <link rel="stylesheet" href="~/css/payment.css">
+
+    <title>Jazz Cafe</title>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <header>
+        <div class="row">
+            <div class="col-lg-4">
+                <h1 class="logo"><a href="#"> JAZZ CAFE</a></h1>
+            </div>
+            <div class="col-lg-8">
+                <div class="smlgrn">
+                    <ul class="main-nav">
+                        <!-- unordered list -->
+                        <li><a href="#">Join us</a></li> <!-- list item -->
+                        <li><a href="#about-section">About</a></li>
+                        <li><a href="#product-section">Product</a></li>
+                        <li><a href="#contact-section">Contact</a></li>
+                        <li><a asp-action="Login">Login</a><b>/</b><a asp-action="SignUp">SignUp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <h2 class="heading-main-text">
+                Without Coffee <br>
+                something's missing
+            </h2>
+
+            <div class="bottom">
+                <button class="btn">Booking</button>
+                <button id="btnOrder" class="btn">Order</button>
+
+                <!-- Modal -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="menu-top">
+                            <span class="close">&times;</span>
+                            <div style="display: flex;">
+                                <i class="fa-solid fa-mug-hot"></i>
+                                <p class="title-menu"><b>Menu order</b></p>
+                            </div>
+                        </div>
+                        <div class="fill">
+                            <div class="shopping">
+                                <a asp-action="Payment">
+                                    <i class="fa-solid fa-basket-shopping"></i>
+                                    <h5>2</h5>
+                                </a>
+                            </div>
+
+                            <ul>
+                                <li><a href="#Coffee-kind">Coffee</a></li>
+                                <li><a href="#fruit-kind">Fruit</a></li>
+                                <li><a href="#tea-kind">Tea</a></li>
+                                <li><a href="#milkshake-genre">Milk Shake</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Coffee -->
+                        <div id="Coffee-kind">
+                            <h3>Coffee</h3>
+                            <div class="row" style="align-content:center">
+                                @foreach (var coffee in Model.coffee)
+                                {
+                                    <div class="col col-xxl-6 div">
+                                        <div class="tag-drink center">
+                                            <div class="div row-tag-menu center">
+                                                <div class="col-xxl-6">
+                                                    <img src="~/img/@coffee.ImgPath" />
+                                                </div>
+                                                <div class="col-xxl-6" style="margin-right: 10px;">
+                                                    <div class="info-product">
+                                                        <p class="product-name"><b>@coffee.ProductName</b></p>
+                                                        <p>@coffee.Price.000 VND</p>
+                                                        <p class="discr">@coffee.Describe</p>
+                                                        <form>
+                                                            <div class="center">
+                                                                <div class="center">
+                                                                    <div class="quantity">
+                                                                        <i class="fa-solid fa-minus minus"></i>
+                                                                        <p>0</p>
+                                                                        <i class="fa-solid fa-plus plus"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="center">
+                                                                    <button class="btn-add-product"><i class="fa-solid fa-cart-shopping"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+
+                        <!-- Fruit -->
+                        <div id="fruit-kind">
+                            <h3 class="titleKindDrink">Juice</h3>
+                            <div class="row" style="align-content:center">
+                                @foreach (var fruit in Model.fruit)
+                                {
+                                    <div class="col col-xxl-6">
+                                        <div class="tag-drink center">
+                                            <div class="div row-tag-menu center">
+                                                <div class="col-xxl-6">
+                                                    <img src="~/img/@fruit.ImgPath" />
+                                                </div>
+                                                <div class="col-xxl-6" style="margin-right: 10px;">
+                                                    <div class="info-product">
+                                                        <p class="product-name"><b>@fruit.ProductName</b></p>
+                                                        <p>@fruit.Price.000 VND</p>
+                                                        <p class="discr">@fruit.Describe</p>
+                                                        <form>
+                                                            <div class="center">
+                                                                <div class="center">
+                                                                    <div class="quantity">
+                                                                        <i class="fa-solid fa-minus minus"></i>
+                                                                        <p>0</p>
+                                                                        <i class="fa-solid fa-plus plus"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="center">
+                                                                    <button class="btn-add-product"><i class="fa-solid fa-cart-shopping"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+
+                        <!-- Tea -->
+                        <div id="tea-kind">
+                            <h3 class="titleKindDrink">Tea</h3>
+                            <div class="row" style="align-content:center">
+                                @foreach (var tea in Model.tea)
+                                {
+                                    <div class="col col-xxl-6">
+                                        <div class="tag-drink center">
+                                            <div class="div row-tag-menu center">
+                                                <div class="col-xxl-6">
+                                                    <img src="~/img/@tea.ImgPath" />
+                                                </div>
+                                                <div class="col-xxl-6" style="margin-right: 10px;">
+                                                    <div class="info-product">
+                                                        <p class="product-name"><b>@tea.ProductName</b></p>
+                                                        <p>@tea.Price.000 VND</p>
+                                                        <p class="discr">@tea.Describe</p>
+                                                        <form>
+                                                            <div class="center">
+                                                                <div class="center">
+                                                                    <div class="quantity">
+                                                                        <i class="fa-solid fa-minus minus"></i>
+                                                                        <p>0</p>
+                                                                        <i class="fa-solid fa-plus plus"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="center">
+                                                                    <button class="btn-add-product"><i class="fa-solid fa-cart-shopping"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+
+                            </div>
+                        </div>
+
+                        <!-- Milk Shake -->
+                        <div id="milkshake-genre">
+                            <h3 class="titleKindDrink">Milk Shake</h3>
+                            <div class="row" style="align-content:center">
+                                @foreach (var ms in Model.MilkShake)
+                                {
+                                    <div class="col col-xxl-6">
+                                        <div class="tag-drink center">
+                                            <div class="div row-tag-menu center">
+                                                <div class="col-xxl-6">
+                                                    <img src="~/img/@ms.ImgPath" />
+                                                </div>
+                                                <div class="col-xxl-6" style="margin-right: 10px;">
+                                                    <div class="info-product">
+                                                        <p class="product-name"><b>@ms.ProductName</b></p>
+                                                        <p>@ms.Price.000 VND</p>
+                                                        <p class="discr">@ms.Describe</p>
+                                                        <form>
+                                                            <div class="center">
+                                                                <div class="center">
+                                                                    <div class="quantity">
+                                                                        <i class="fa-solid fa-minus minus"></i>
+                                                                        <p>0</p>
+                                                                        <i class="fa-solid fa-plus plus"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="center">
+                                                                    <button class="btn-add-product"><i class="fa-solid fa-cart-shopping"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    @RenderBody()
+
+    <section id="contact-section" class="contact-section">
+        <div class="row">
+            <ul class="information">
+                <li>
+                    <i class="fa-solid fa-location-dot small-icon" style="margin-left:6px; margin-right:5px;"></i>Address: 43 Av. Daumesnil, 75012 Paris,
+                    Euorpe
+                </li>
+                <li><i class="fa-solid fa-envelope small-icon"></i>Email: levis.jm@gmail.com</li>
+                <li><i class="fa-solid fa-phone small-icon"></i>Hotline: +33144747070</li>
+            </ul>
+            <!-- <ul class="social-icons">
+                <li><a href="https://www.facebook.com/zing2308/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/zinguyen23/"><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-google"></i></li>
+            </ul> -->
+        </div>
+    </section>
+    <!-- Script -->
+
+    <script src="~/js/GoToTop.js"></script>     <!-- Go to top -->
+    <script src="~/js/ModalOrder.js"></script> <!-- Open modal menu -->
+</body>
+</html>

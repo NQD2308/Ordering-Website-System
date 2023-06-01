@@ -1,0 +1,157 @@
+﻿@model CoffeeShop.Models.Product
+
+<style>
+    a {
+        font-size: 16px;
+    }
+
+    body {
+        background-image: none;
+        font-size: 16px;
+    }
+
+    .from-of-createnewproduct {
+        width: 380px;
+        height: fit-content;
+    }
+
+        .from-of-createnewproduct .form-group label, select, input {
+            font-size: 16px;
+            padding: 2px 5px;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+    .create-product .form {
+        background: none;
+    }
+
+        .create-product .form table {
+            width: fit-content;
+        }
+
+    .span {
+        display: block;
+        font-size: 14px;
+    }
+</style>
+
+<div style="display:block">
+    <div style="margin: 10px 40px">
+        <h2> Create new product</h2>
+    </div>
+
+    <div class="create-product" style="display:flex">
+        <div class="row">
+            <div class="col-md-4">
+                <form class="from-of-createnewproduct" asp-action="SaveProduct">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <span asp-validation-for="ProductId" class="text-danger span"></span>
+                    <span asp-validation-for="ProductName" class="text-danger span"></span>
+                    <span asp-validation-for="Price" class="text-danger span"></span>
+                    <span asp-validation-for="ImgPath" class="text-danger span"></span>
+
+                    <div class="form-group">
+                        <label asp-for="ProductId" class="control-label"></label>
+                        <input asp-for="ProductId" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ProductName" class="control-label"></label>
+                        <input asp-for="ProductName" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="GenreId" class="control-label"></label>
+                        <select asp-for="GenreId" class="form-control" style="font-size: 16px;" asp-items="@ViewBag.GenreId"></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Price" class="control-label"></label>
+                        <input asp-for="Price" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Describe" class="control-label"></label>
+                        <input asp-for="Describe" class="form-control" />
+                        <span asp-validation-for="Describe" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Discount" class="control-label"></label>
+                        <input asp-for="Discount" class="form-control" />
+                        <span asp-validation-for="Discount" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ImgPath" class="control-label"></label>
+                        <input asp-for="ImgPath" class="form-control" />
+                    </div>
+                    @*                    <div class="form-group">
+                    <label asp-for="ImgPhoto" class="control-label"></label>
+                    <input asp-for="ImgPhoto" class="form-control" />
+                    <span asp-validation-for="ImgPhoto" class="text-danger"></span>
+                    </div>*@
+                    <div class="form-group">
+                        <input style="cursor: pointer" type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="form">
+            <form class="list-form" action="/">
+                <h3>Genre product ID</h3>
+                <table class="function">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Product</th>
+                            <th>ID</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Coffee</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Tea</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Fruite</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </form>
+        </div>
+        <div class="form">
+            <form class="list-form" action="/">
+                <h3>Product ID</h3>
+                <table class="function">
+                    <tr>
+                        <th>#</th>
+                        <th>Product</th>
+                        <th>ID</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Coffee</td>
+                        <td>CF</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Tea</td>
+                        <td>TD</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Fruite</td>
+                        <td>FR</td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+
+

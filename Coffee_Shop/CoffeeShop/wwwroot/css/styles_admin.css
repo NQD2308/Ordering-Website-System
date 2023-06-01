@@ -1,0 +1,48 @@
+/*=============================================*/
+/*================== Product ==================*/
+/*=============================================*/
+
+    .from-of-createnewproduct{
+        padding: 25px;
+        margin-left: 30px;
+        width: 700px;
+    }
+
+    .from-of-createnewproduct input, select {
+        float:right;
+        width: 180px;
+        font-size: 16px;
+    }
+
+    .list-form h3{
+        text-align: center;
+    }
+
+.form-group{
+    margin: 10px;
+}
+
+.table-list-products td a:hover {
+    color: red;
+}
+
+.btn {
+    float: right;
+    margin: 5px 0;
+    padding: 5px 20px;
+    background: #7a431d;
+    border-radius: 12px;
+    color: rgb(226, 154, 61);
+}
+
+    .btn:hover {
+        color: white;
+    }
+
+
+
+
+/*=============================================*/
+/*================== Customer =================*/
+/*=============================================*/
+

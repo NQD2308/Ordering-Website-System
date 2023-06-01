@@ -1,0 +1,130 @@
+﻿@model CoffeeShop.Models.Customer
+
+@{
+    Layout = "~/Views/Shared/_Layout_SignUp.cshtml";
+}
+
+<style>
+    header{
+        background-image: none;
+        background-color: rgb(226, 154, 61);
+        color:#7a431d;
+        height:100px;
+    }
+
+    header .main-nav li a, b {
+        color:#7a431d;
+    }
+
+    header .main-nav li a:hover,
+    header .main-nav li a:active {
+        border-bottom: 2px solid #7a431d;
+        transition: border-bottom 0.1s;
+    }
+
+    .SignUp-form{
+        width: 550px;
+        background: rgba(224, 176, 120, 0.7);
+        margin: 10% 0;
+        padding: 20px 30px;
+        border-radius: 20px;
+    }
+
+    .SignUp-form .form-group{
+        /*display:flex;*/
+        /*float: right;*/
+        line-height: normal;
+    }
+
+    .SignUp-form table tr .form-group label{
+        font-size: 20px;
+        padding: 2px 5px;
+    }
+
+    .SignUp-form table .form-group td input{
+        height: none;
+        width: 295px;
+        float: right;
+        outline: none;
+        padding: 2px 5px;
+        border-radius: 12px;
+        font-size: 20px;
+        outline: none;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+    }
+
+    input.btn-singup{
+        height: 26px;
+    }
+
+    .SignUp-form table tr td .btn-singup{
+        height: 35px;
+        background-color: rgb(86,55,39);
+        color: rgb(224, 176, 120);
+        transition: all 0.25s ease-in;
+    }
+
+    .SignUp-form table tr td .btn-singup:hover {
+        color: white;
+        transition: all 0.25s ease-in;
+    }
+
+    .SignUp-form table tr td label{
+        width:185px;
+    }
+    
+</style>
+
+<div class="row">
+    <div class="col center">
+        <form class="SignUp-form" asp-action="SaveCustomer">
+            <h2>Sign Up</h2>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <table >
+                <tr class="form-group">
+                    <td><label asp-for="Account" class="control-label">Email</label></td>
+                    <td><input asp-for="Account" class="form-control" required /></td>
+                    <span asp-validation-for="Account" class="text-danger"></span>
+                </tr>
+                <tr class="form-group">
+                    <td><label asp-for="Name" class="control-label"></label></td>
+                    <td><input asp-for="Name" class="form-control" required /></td>
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </tr>
+                <tr class="form-group">
+                    <td><label asp-for="PhoneNumber" class="control-label">Phone number</label></td>
+                    <td><input asp-for="PhoneNumber" class="form-control" required /></td>
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </tr>
+                <tr class="form-group">
+                    <td><label asp-for="Address" class="control-label"></label></td>
+                    <td><input asp-for="Address" class="form-control" required /></td>
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </tr>
+                <tr class="form-group">
+                    <td><label asp-for="Password" class="control-label"></label></td>
+                    <td><input asp-for="Password" id="password" type="password" class="form-control" required /></td>
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </tr>
+                <tr class="form-group">
+                    <td><label class="control-label">Confirm password</label></td>
+                    <td><input id="re-password" type="password" class="form-control" required /></td>
+                </tr>
+                <tr class="form-group">
+                    <td></td>
+                    <td><input id="btn-SignUp" type="submit" value="Sign Up" class="btn-singup" /></td>
+                </tr>
+            </table>
+            
+            @*<div class="form-group">
+                <label asp-for="HistoryBillId" class="control-label"></label>
+                <select asp-for="HistoryBillId" class ="form-control" asp-items="ViewBag.HistoryBillId"></select>
+            </div>*@
+            
+            
+        </form>
+    </div>
+</div>
