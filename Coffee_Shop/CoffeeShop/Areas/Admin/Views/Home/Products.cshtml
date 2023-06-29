@@ -103,10 +103,11 @@
             <tbody>
                 @foreach (var item in Model)
                 {
+                    string price = @item.Price.ToString("0.000");
                     <tr class="table-list-products">
                         <td>@item.ProductId</td>
                         <td>@item.ProductName</td>
-                        <td>@item.Price.000</td>
+                        <td>@price đ</td>
                         <td>@item.Describe</td>
                         <td><img src="~/img/@item.ImgPath" style="width:70px; height:100px; border-radius: 8px" /></td>
                         <td>

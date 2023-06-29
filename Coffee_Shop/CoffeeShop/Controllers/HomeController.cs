@@ -1,5 +1,7 @@
-﻿using CoffeeShop.Models;
+﻿using CoffeeShop.Areas.Identity.Data;
+using CoffeeShop.Models;
 using CoffeeShop.Repository;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -10,11 +12,21 @@ namespace CoffeeShop.Controllers
         private ProductDAO _productDAO = new ProductDAO();
         private ICustomerRepository _customerRepository;
         private readonly ILogger<HomeController> _logger;
+        private readonly SignInManager<ApplicationUser> _signInManager;
 
-        public HomeController(ILogger<HomeController> logger, ICustomerRepository customerRepository)
+        public HomeController(ILogger<HomeController> logger, 
+                                ICustomerRepository customerRepository,
+                                SignInManager<ApplicationUser> signInManager)
         {
             _logger = logger;
             _customerRepository = customerRepository;
+            _signInManager = signInManager;
+        }
+
+        public IActionResult Logout()
+        {
+            _signInManager.SignOutAsync();
+            return LocalRedirect("/home/index");
         }
 
         public IActionResult Index()
@@ -24,31 +36,15 @@ namespace CoffeeShop.Controllers
             List<Product> Tea = _productDAO.GetTeaProduct();
             List<Product> MilkShake = _productDAO.GetMilkshakeProduct();
 
-            //ViewBag.CoffeeList = Coffee;
-            //ViewBag.FruitList = Fruit;
-            //ViewBag.TeaList = Tea;
-
             MenuModel m = new MenuModel();
             m.coffee = Coffee;
             m.fruit = Fruit;
             m.tea = Tea;
             m.MilkShake = MilkShake;
 
-            return View(m);
-        }
+            int? n = HttpContext.Session.GetInt32("nITems") == null ? 0 : HttpContext.Session.GetInt32("nITems");
 
-        public IActionResult Payment()
-        {
-            List<Product> Coffee = _productDAO.GetCoffeeProduct();
-            List<Product> Fruit = _productDAO.GetFruitProduct();
-            List<Product> Tea = _productDAO.GetTeaProduct();
-            List<Product> MilkShake = _productDAO.GetMilkshakeProduct();
-
-            MenuModel m = new MenuModel();
-            m.coffee = Coffee;
-            m.fruit = Fruit;
-            m.tea = Tea;
-            m.MilkShake = MilkShake;
+            ViewBag.n = n;
 
             return View(m);
         }
@@ -70,17 +66,11 @@ namespace CoffeeShop.Controllers
             return View();
         }
 
-
-        public IActionResult SignUp1()
-        {
-            return View("SignUp", new Customer());
-        }
-
-        public IActionResult SaveCustomer(Customer customer)
+     /*   public IActionResult SaveCustomer(Customer customer)
         {
             _customerRepository.Create(customer);
             return RedirectToAction("Login");
-        }
+        }*/
 
         public IActionResult Privacy()
         {

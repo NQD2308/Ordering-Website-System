@@ -1,11 +1,14 @@
 ﻿using CoffeeShop.Models;
 using CoffeeShop.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Data;
 
 namespace CoffeeShop.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Administrator")]
     public class CustomerController : Controller
     {
         private ICustomerRepository _customerRepository;

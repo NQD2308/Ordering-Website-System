@@ -1,29 +1,44 @@
 ﻿using CoffeeShop.Areas.Admin.Models;
+using CoffeeShop.Areas.Identity.Data;
 using CoffeeShop.Models;
 using CoffeeShop.Repository;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Data;
 using System.Drawing.Printing;
 
 namespace CoffeeShop.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Administrator")]
     public class HomeController : Controller
     {
         private OderDrinkingContext _ctx;
 
         private IProductRepository _productRepository;
         private IGenreRepository _genreRepository;
-        public HomeController(IProductRepository productRepository, IGenreRepository genreRepository, OderDrinkingContext ctx)
+        private readonly SignInManager<ApplicationUser> _signInManager;
+        public HomeController(IProductRepository productRepository, 
+                                IGenreRepository genreRepository, 
+                                OderDrinkingContext ctx,
+                                SignInManager<ApplicationUser> signInManager)
         {
             _productRepository = productRepository;
             _genreRepository = genreRepository;
             _ctx = ctx;
+            _signInManager = signInManager;
         }
         //public IActionResult Index()
         //{
         //    return View();
         //}
+        public IActionResult Logout()
+        {
+            _signInManager.SignOutAsync();
+            return LocalRedirect("/identity/account/login");
+        }
         [HttpPost]
         public IActionResult FillProductById(int page = 1, int pageSize = 4)
         {

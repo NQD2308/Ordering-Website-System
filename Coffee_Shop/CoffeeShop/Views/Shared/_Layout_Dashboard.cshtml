@@ -1,4 +1,9 @@
-﻿@inject IGenreRepository GenreRepository
+﻿@using Microsoft.AspNetCore.Identity
+@using CoffeeShop.Areas.Identity.Data
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@inject IGenreRepository GenreRepository
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,13 +28,21 @@
             </div> -->
         </div>
 
-        <div class="header-icons">
-            <!-- <i class="fas fa-bell"></i> -->
-            <!-- <div class="account">
-                <img src="../img/Cafe_au_lait.jpg" alt="">
-                <h4></h4>
-            </div> -->
-        </div>
+        @if (SignInManager.IsSignedIn(User))
+        {
+            <div class="header-icons">
+                <i class="fas fa-bell"></i>
+                <div class="account">
+                    @*<img src="../img/Cafe_au_lait.jpg" alt="">*@
+                    <h4>Hello @UserManager.GetUserName(User)!</h4>
+                </div>
+            </div>
+        }
+        else
+        {
+            <a href="/Identity/Account/Login?ReturnUrl=%2Fadmin"><i class="fa-solid fa-user"></i> Login</a>
+        }
+
     </header>
     
     <div class="container">
@@ -41,7 +54,16 @@
                 <a asp-action="Index" asp-controller="Genre" asp-area="Admin">Genre</a>
                 <a href="#">Staff</a>
                 <a asp-action="Customers" asp-controller="Customer" asp-area="Admin">Customer</a>
-                <a href="#">My Account</a>
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <a href="#">My Account</a>
+                    <a href="/admin/home/logout">Logout</a>
+                }
+                else
+                {
+                    
+                }
+
 
                 <!-- <div class="links">
                 <span>Quick Link</span>

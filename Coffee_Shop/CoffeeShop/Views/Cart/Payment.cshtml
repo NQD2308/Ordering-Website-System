@@ -1,0 +1,315 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using CoffeeShop.Areas.Identity.Data
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@model MenuModel
+
+@{
+    var user = await UserManager.GetUserAsync(User);
+    var fullName = user.FullName;
+    var phonenumber = user.PhoneNumber;
+    var address = user.Address;
+}
+
+<section class="Payment" id="Payment">
+    <div class="row">
+        @*<h2>@ViewBag.sessionId</h2>*@
+        <h3>Payment</h3>
+    </div>
+    <div class="row">
+        <div class="center">
+            <div action="/" class="formBillItems">
+                <div class="detailBill">
+                    <p>Invoice number: @ViewBag.sessionId</p>
+                    <table class="BillItems">
+                        <thead>
+                            <tr>
+                                <th class="icon-cancel-title"> </th>
+                                <th>#</th>
+                                <th>Item</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Tolal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{
+                                int i = 0;
+                            }
+                            @foreach(var item in Model.Cart.getAllItem())
+                            {
+                                ++i;
+                                <tr>
+                                    <td class="center-in-table icon-cancel"><a asp-action="RemoveItem" asp-controller="cart" asp-route-id="@item.Id"><i class="fa-solid fa-xmark"></i></a></td>
+                                    <td class="center-in-table">@i</td>
+                                    <td class="padl-in-table">@item.Name</td>
+                                    <td class="center-in-table">@item.Price.ToString("0.000") đ</td>
+                                    <td class="center-in-table">
+                                        @using (Html.BeginForm("UpdateQuantity", "cart", FormMethod.Post))
+                                        {
+                                            <div class="center Quantity">
+                                                @Html.HiddenFor(m=>item.Id)
+                                                @*<i class="fa-solid fa-minus minus" name="btnUpdateQuantity" style="font-size: 16px;cursor: pointer;"></i>*@
+                                                <input type="submit" class="minus" value="-" name="btnUpdateQuantity"
+                                               style="height:40px; font-size: 20px; background-color: transparent; border: none; color:rgb(86,55,39)">
+
+                                                <p style="padding: 0 20px; font-size: 23px">@item.Quantity</p>
+
+                                                @*<i class="fa-solid fa-plus plus" name="btnUpdateQuantity" style="font-size: 16px;cursor: pointer;"></i>*@
+                                                <input type="submit" class="plus" value="+" name="btnUpdateQuantity"
+                                               style="height:40px; font-size: 20px; background-color: transparent; border: none; color:rgb(86,55,39)">
+                                            </div> 
+                                        }
+                                    </td>
+                                    <td class="center-in-table">@item.lineTotal.ToString("0.000") đ</td>
+                                </tr>
+                                
+                            }
+                            @if(i == 0)
+                            {
+                                <tr>
+                                    <th colspan="6">Your shopping cart is empty</th>
+                                </tr>
+                            }
+                            else
+                            {
+                                <tr>
+                                    <th colspan="5">Total Bill</th>
+                                    <th>@Model.Cart.getTotal().ToString("0.000") đ</th>
+                                </tr>
+                            }
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="detailBill">
+                <h5><b>Detail</b></h5>
+                <hr />
+                <form>
+                    <table class="infoDetailBill">
+                        <tr>
+                            <td><b>Orderer: </b></td>
+                            <td>@fullName</td>
+                        </tr>
+                        <tr>
+                            <td><b>Phone number:</b></td>
+                            <td>@phonenumber</td>
+                        </tr>
+                        <tr>
+                            <td><b>Address:</b></td>
+                            <td>@address</td>
+                        </tr>
+                    </table>
+                </form>
+                <hr />
+                @*<form method="post">*@
+                    @*<form asp-action="Note" asp-controller="cart" method="post">*@
+                    @using (Html.BeginForm("Payment", "cart", FormMethod.Post))
+                    {
+                        <b>Note </b>
+                        <p>@ViewBag.Note</p>
+                        @*<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>*@
+
+                        <div id="ModalOrder2" class="modalInfo">
+                            <div class="modal-content1">
+                                <div class="menu-top">
+                                    <span class="close1">&times;</span>
+                                    <div style="display: flex">
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                        <p class="title-menu"><b>Infomaion Bill</b></p>
+                                    </div>
+                                </div>
+                                <div class="center">
+                                    <div class="detailFillForm">
+                                        <div class="center">
+                                            <div>
+                                                <h3><b>Oderer</b></h3>
+                                                <div class="center">
+                                                    <table class="formFillDetail">
+                                                        <tr>
+                                                            <td><b>Oderer</b></td>
+                                                            <td><input type="text" value="@fullName" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><b>Phone number</b></td>
+                                                            <td><input type="text" value="@phonenumber" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><b>Address</b></td>
+                                                            <td><input type="text" value="@address" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><b>Note</b></td>
+                                                            <td>
+                                                                <textarea name="_Note" style="resize: none; white-space:pre-line">@ViewBag.Note</textarea>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <div class="btnConfirm">
+                                                    <button type="submit">Confirm</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @*</form>*@
+                    }        
+                <hr />
+                <form>
+                    @{
+                        decimal FreeShip = 0;
+                        if (Model.Cart.getAllItem() != null)
+                        {
+                            FreeShip = 10;
+                        }
+                        else
+                        {
+                            FreeShip = 0;
+                        }
+
+                        decimal Discount = @Model.Cart.getTotal() * 5 / 100;
+                        decimal total = @Model.Cart.getTotal() + FreeShip - Discount;
+                    }
+                    <table class="infoDetailBill">
+                        <tr>
+                            <td><b>Sub total: </b></td>
+                            <td></td>
+                            <td>@Model.Cart.getTotal().ToString("0.000")</td>
+                        </tr>
+                        <tr>
+                            <td><b>Discount: </b></td>
+                            <td style="width:80px">5%</td>
+                            <td>@Discount</td>
+                        </tr>
+                        <tr>
+                            <td><b>Fee ship: </b></td>
+                            <td></td>
+                            <td>@FreeShip.ToString("0.000")</td>
+                        </tr>
+                        <tr>
+                            <td><b>Total bill: </b></td>
+                            <td></td>
+                            <td><b style="font-size: 23px">@total.ToString("0.000") đ</b></td>
+                        </tr>
+                    </table>
+                </form>
+                <hr />
+                <div class="info-order">
+                    <div class="btn-info1">
+                        <button id="btnOdering" class="btnInDetail">Note</button>
+                        <button class="btnInDetail"><a asp-action ="CheckOut" asp-controller="cart">Check Out</a></button>
+                    </div>
+
+                    <!-- Modal get info Order -->
+                    @*<div id="ModalOrder2" class="modalInfo">
+                        <div class="modal-content1">
+                            <div class="menu-top">
+                                <span class="close1">&times;</span>
+                                <div style="display: flex">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <p class="title-menu"><b>Infomaion Bill</b></p>
+                                </div>
+                            </div>
+                            <div class="center">
+                                <div class="detailFillForm">
+                                    <form asp-controller="cart" asp-action="Note" method="post">
+                                        <div class ="center">
+                                            <div>
+                                                <h3><b>Oderer</b></h3>
+                                                <div class="center">
+                                                    <table class="formFillDetail">
+                                                        <tr>
+                                                            <td><b>Oderer</b></td>
+                                                            <td><input type="text" value="@fullName" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><b>Phone number</b></td>
+                                                            <td><input type="text" value="@phonenumber" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><b>Address</b></td>
+                                                            <td><input type="text" value="@address" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><b>Note</b></td>
+                                                            <td>
+                                                                <textarea style="resize: none"></textarea>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <div class="btnConfirm">
+                                                    <button type="submit">Confirm</button>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                @*<h3><b>Receiver</b></h3>
+                                                <form method="post">
+                                                    <table class="formFillDetail">
+
+                                                        <tr>
+                                                            <td><b>Người nhận</b></td>
+                                                            <td><input type="text" name="receiveName" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><b>Số điện thoại</b></td>
+                                                            <td><input type="text" name="receivePhone" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><b>Địa chỉ</b></td>
+                                                            <td><input type="text" name="receiveAddress" /></td>
+                                                        </tr>
+                                                    </table>
+
+                                                    <button>Confirm</button>
+                                                </form>*@
+                                                @*@using (Html.BeginForm("CheckOutBill", "cart", FormMethod.Post))
+                                                {
+                                                    
+                                                } *@
+                                            </div>
+                                        </div>
+                                        @*<div class="btnConfirm">
+                                            <button>Confirm</button>
+                                        </div>*@
+                                    @*</form>*@
+                                </div>
+                               @* <div class="detailFillForm center">
+                                    <form method="post">
+                                        <h3><b>Receiver</b></h3>
+                                        <table class="formFillDetail">
+                                            <tr>
+                                                <td><b>Người nhận</b></td>
+                                                <td><input type="text" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Số điện thoại</b></td>
+                                                <td><input type="text" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Địa chỉ</b></td>
+                                                <td><input type="text" /></td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                </div>*@
+                            </div>
+                            @*<div class="btnConfirm">
+                                <button>Confirm</button>
+                            </div>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="~/js/ModalInfoOrder.js"></script>
+</section>

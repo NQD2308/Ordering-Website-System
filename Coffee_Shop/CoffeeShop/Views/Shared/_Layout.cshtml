@@ -1,4 +1,9 @@
-﻿@model CoffeeShop.Models.MenuModel;
+﻿@using Microsoft.AspNetCore.Identity
+@using CoffeeShop.Areas.Identity.Data
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@model CoffeeShop.Models.MenuModel;
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +31,7 @@
     <header>
         <div class="row">
             <div class="col-lg-4">
-                <h1 class="logo"><a href="#"> JAZZ CAFE</a></h1>
+                <h1 class="logo"><a asp-action="Index" asp-controller="Home"> JAZZ CAFE</a></h1>
             </div>
             <div class="col-lg-8">
                 <div class="smlgrn">
@@ -36,7 +41,20 @@
                         <li><a href="#about-section">About</a></li>
                         <li><a href="#product-section">Product</a></li>
                         <li><a href="#contact-section">Contact</a></li>
-                        <li><a asp-action="Login">Login</a><b>/</b><a asp-action="SignUp">SignUp</a></li>
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <li><a href="#"><i class="fa fa-user"></i>@UserManager.GetUserName(User)</a></li>
+                            <li><a href="/home/logout">Logout</a></li>
+                        }
+                        else
+                        {
+                            <li>
+                                <a href="/Identity/Account/LoginCustomer">Login</a>
+                            <b>/</b>
+                            <a href="/Identity/Account/Register">SignUp</a>
+                        </li>
+                        }
+                        
                     </ul>
                 </div>
             </div>
@@ -64,9 +82,10 @@
                         </div>
                         <div class="fill">
                             <div class="shopping">
-                                <a asp-action="Payment">
+                                <a asp-action="Payment"
+                                    asp-controller="Cart">
                                     <i class="fa-solid fa-basket-shopping"></i>
-                                    <h5>2</h5>
+                                    <h5>@ViewBag.n</h5>
                                 </a>
                             </div>
 
@@ -93,22 +112,27 @@
                                                 <div class="col-xxl-6" style="margin-right: 10px;">
                                                     <div class="info-product">
                                                         <p class="product-name"><b>@coffee.ProductName</b></p>
-                                                        <p>@coffee.Price.000 VND</p>
+                                                        <p>
+                                                            @{
+                                                                decimal FinalPrice = 0;
+                                                                decimal dis = Convert.ToDecimal(coffee.Discount);
+                                                                FinalPrice = coffee.Price - (coffee.Price * (dis / 100));
+                                                                string finalPrice = FinalPrice.ToString("0.000");
+                                                            }
+                                                            Price: @finalPrice đ
+                                                        </p>
+                                                        <p>Discount: @coffee.Discount %</p>
                                                         <p class="discr">@coffee.Describe</p>
-                                                        <form>
                                                             <div class="center">
-                                                                <div class="center">
-                                                                    <div class="quantity">
-                                                                        <i class="fa-solid fa-minus minus"></i>
-                                                                        <p>0</p>
-                                                                        <i class="fa-solid fa-plus plus"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="center">
-                                                                    <button class="btn-add-product"><i class="fa-solid fa-cart-shopping"></i></button>
+                                                                <div class="btn_Order">
+                                                                    <a class="btn-add-product"
+                                                                        asp-action="AddToCart"
+                                                                        asp-controller="cart"
+                                                                        asp-route-id="@coffee.ProductId">Order
+                                                                        @*<i class="fa-solid fa-cart-shopping"></i>*@
+                                                                    </a>
                                                                 </div>
                                                             </div>
-                                                        </form>
                                                     </div>
                                                 </div>
                                             </div>
@@ -133,22 +157,28 @@
                                                 <div class="col-xxl-6" style="margin-right: 10px;">
                                                     <div class="info-product">
                                                         <p class="product-name"><b>@fruit.ProductName</b></p>
-                                                        <p>@fruit.Price.000 VND</p>
+                                                        <p>
+                                                            @{
+                                                                decimal FinalPrice = 0;
+                                                                decimal dis = Convert.ToDecimal(fruit.Discount);
+                                                                FinalPrice = fruit.Price - (fruit.Price * (dis / 100));
+                                                                string finalPrice = FinalPrice.ToString("0.000");
+                                                            }
+                                                            @finalPrice đ
+                                                        </p>
+                                                        <p>@fruit.Discount %</p>
                                                         <p class="discr">@fruit.Describe</p>
-                                                        <form>
-                                                            <div class="center">
-                                                                <div class="center">
-                                                                    <div class="quantity">
-                                                                        <i class="fa-solid fa-minus minus"></i>
-                                                                        <p>0</p>
-                                                                        <i class="fa-solid fa-plus plus"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="center">
-                                                                    <button class="btn-add-product"><i class="fa-solid fa-cart-shopping"></i></button>
-                                                                </div>
+                                                        <div class="center">
+                                                            <div class="btn_Order">
+                                                                <a class="btn-add-product"
+                                                               asp-action="AddToCart"
+                                                               asp-controller="cart"
+                                                               asp-route-id="@fruit.ProductId">
+                                                                    Order
+                                                                    @*<i class="fa-solid fa-cart-shopping"></i>*@
+                                                                </a>
                                                             </div>
-                                                        </form>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -173,22 +203,28 @@
                                                 <div class="col-xxl-6" style="margin-right: 10px;">
                                                     <div class="info-product">
                                                         <p class="product-name"><b>@tea.ProductName</b></p>
-                                                        <p>@tea.Price.000 VND</p>
+                                                        <p>
+                                                            @{
+                                                                decimal FinalPrice = 0;
+                                                                decimal dis = Convert.ToDecimal(tea.Discount);
+                                                                FinalPrice = tea.Price - (tea.Price * (dis / 100));
+                                                                string finalPrice = FinalPrice.ToString("0.000");
+                                                            }
+                                                            @finalPrice đ
+                                                        </p>
+                                                        <p>@tea.Discount %</p>
                                                         <p class="discr">@tea.Describe</p>
-                                                        <form>
-                                                            <div class="center">
-                                                                <div class="center">
-                                                                    <div class="quantity">
-                                                                        <i class="fa-solid fa-minus minus"></i>
-                                                                        <p>0</p>
-                                                                        <i class="fa-solid fa-plus plus"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="center">
-                                                                    <button class="btn-add-product"><i class="fa-solid fa-cart-shopping"></i></button>
-                                                                </div>
+                                                        <div class="center">
+                                                            <div class="btn_Order">
+                                                                <a class="btn-add-product"
+                                                               asp-action="AddToCart"
+                                                               asp-controller="cart"
+                                                               asp-route-id="@tea.ProductId">
+                                                                    Order
+                                                                    @*<i class="fa-solid fa-cart-shopping"></i>*@
+                                                                </a>
                                                             </div>
-                                                        </form>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -214,22 +250,27 @@
                                                 <div class="col-xxl-6" style="margin-right: 10px;">
                                                     <div class="info-product">
                                                         <p class="product-name"><b>@ms.ProductName</b></p>
-                                                        <p>@ms.Price.000 VND</p>
+                                                        <p>
+                                                            @{
+                                                                decimal FinalPrice = 0;
+                                                                decimal dis = Convert.ToDecimal(ms.Discount);
+                                                                FinalPrice = ms.Price - (ms.Price * (dis / 100));
+                                                                string finalPrice = FinalPrice.ToString("0.000");
+                                                            }
+                                                            @finalPrice đ
+                                                        </p>
+                                                        <p>@ms.Discount %</p>
                                                         <p class="discr">@ms.Describe</p>
-                                                        <form>
-                                                            <div class="center">
-                                                                <div class="center">
-                                                                    <div class="quantity">
-                                                                        <i class="fa-solid fa-minus minus"></i>
-                                                                        <p>0</p>
-                                                                        <i class="fa-solid fa-plus plus"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="center">
-                                                                    <button class="btn-add-product"><i class="fa-solid fa-cart-shopping"></i></button>
-                                                                </div>
+                                                        <div class="center">
+                                                            <div class="btn_Order">
+                                                                <a class="btn-add-product"
+                                                               asp-action="AddToCart"
+                                                               asp-controller="cart"
+                                                               asp-route-id="@ms.ProductId">
+                                                                    Order
+                                                                </a>
                                                             </div>
-                                                        </form>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>

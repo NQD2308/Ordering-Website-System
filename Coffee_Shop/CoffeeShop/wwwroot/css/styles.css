@@ -53,20 +53,6 @@ ul, li, ol{
     color: #FFFFFF;
 }
 
-.btn-add-product{
-    background-color: transparent;
-    color: rgb(86,55,39);
-    font-size: 18px;
-    padding: 0px;
-    margin-left: 10px;
-    border-radius: 100px;
-}
-
-.btn-add-product:hover{
-    transition: all 0.25s ease-in;
-    margin-left: 20px;
-}
-
 .row{
     max-width: 1400px;
     margin: 0 auto; 
@@ -493,6 +479,28 @@ button{
     color: #FFFF;
     cursor: pointer;
 }
+
+.btn_Order {
+    display:flex;
+    justify-content:center;
+    width: 140px;
+    border-radius: 16px;
+    background-color: rgb(86,55,39);
+    
+}
+
+.btn-add-product {
+    background-color: transparent;
+    color: #e29a3d;
+    font-size: 18px;
+    padding: 3px 0;
+    border-radius: 100px;
+}
+
+    .btn-add-product:hover {
+        transition: all 0.25s ease-in;
+        color: white;
+    }
 
 /* --------------------------------------------- */
 /* ---------------- MENU SECTION --------------- */

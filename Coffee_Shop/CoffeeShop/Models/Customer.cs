@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 
 namespace CoffeeShop.Models;
 
@@ -8,13 +7,10 @@ public partial class Customer
 {
     public int Id { get; set; }
 
-    [Required]
     public string Name { get; set; } = null!;
 
-    [Required]
     public string PhoneNumber { get; set; } = null!;
 
-    [Required]
     public string Address { get; set; } = null!;
 
     public string? HistoryBillId { get; set; }

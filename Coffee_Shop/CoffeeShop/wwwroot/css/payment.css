@@ -25,12 +25,17 @@
     margin-left: 5px;
 }
 
+
+
+/*.Payment .BillItems tbody tr td.icon-cancel a i:hover {
+    color: red;
+    transition: all .25s ease-in;
+}*/
+
 /*.border {
     border: 1px solid #563727;
 }*/
-
 /*  ============ TABLE INFO DETAIL BILL ============*/
-
 .infoDetailBill {
     width: 400px;
     height: 130px;
@@ -68,12 +73,25 @@
     background-color: #563727;
     /*margin-right: 30px;*/
 }
-/*  ============ MODAL ============*/
 
+.btnInDetail a{
+    color: #eba850;
+    text-decoration: none;
+}
+
+detailBill BillItems tbody tr .Quantity i.minus,
+detailBill BillItems tbody tr .Quantity i.plus {
+    border: none;
+    color: rgb(86,55,39);
+    background-color: transparent;
+    font-size: 12px;
+    cursor: pointer;
+}
+/*  ============ MODAL ============*/
 .modalInfo {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index:2; /* Sit on top */
+    z-index: 2; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
@@ -90,7 +108,7 @@
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 900px;
+    width: 680px;
     max-width: 80%;
     margin-bottom: 50px;
     -webkit-border-radius: 0px !important;
@@ -123,8 +141,8 @@
 }
 
 .formFillDetail{
-    width: 400px;
-    height: 150px;
+    width: 540px;
+    height: 290px;
 }
 
 .formFillDetail tr, th,td{
@@ -132,12 +150,21 @@
 }
 
     .formFillDetail input {
+        width:320px;
         outline: none;
         border: none;
         border-radius: 16px;
         padding: 3px 14px;
         color: #563727;
     }
+
+.Payment table.formFillDetail textarea {
+    height: 120px;
+    width: 320px;
+    border-radius: 16px;
+    padding: 8px;
+    outline: none;
+}
 
 .detailFillForm {
     /*border: 1px solid #563727;*/
@@ -167,3 +194,22 @@
     color: white;
     transition: all .25s ease-in;
 }
+
+.Payment .BillItems thead tr th.icon-cancel-title {
+    width: 50px;
+}
+
+.Payment .BillItems tbody tr td.icon-cancel {
+    cursor: pointer;
+}
+
+.Payment .BillItems tbody tr td.icon-cancel  a{
+    color:#7a431d;
+    transition: all .25s ease-in;
+}
+
+.Payment .BillItems tbody tr td.icon-cancel a i{
+    font-size: 20px;
+    transition: all .25s ease-in;
+}
+
