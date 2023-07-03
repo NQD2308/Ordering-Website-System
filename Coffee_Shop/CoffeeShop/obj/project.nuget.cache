@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gHU3hpH0RLMzbGzKzElbvid5rqO8pGfUIyZuXFwpWBkzvw31EhtbyugfAZQDNWKfhvfhiYdlekYKC2g0JfqVAw==",
+  "dgSpecHash": "2DfgUnizx2htRGC02onXt2HG5BxRf4mRsDOIZOy8O68GzSZLEEI3T+VBmyC/mQAeWfhxS7YEkJS+PCq+7KiKYg==",
   "success": true,
-  "projectFilePath": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\CoffeeShop.csproj",
+  "projectFilePath": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\CoffeeShop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

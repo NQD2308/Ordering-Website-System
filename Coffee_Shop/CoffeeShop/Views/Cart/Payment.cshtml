@@ -105,7 +105,6 @@
                 </form>
                 <hr />
                 @*<form method="post">*@
-                    @*<form asp-action="Note" asp-controller="cart" method="post">*@
                     @using (Html.BeginForm("Payment", "cart", FormMethod.Post))
                     {
                         <b>Note </b>
@@ -143,7 +142,7 @@
                                                         <tr>
                                                             <td><b>Note</b></td>
                                                             <td>
-                                                                <textarea name="_Note" style="resize: none; white-space:pre-line">@ViewBag.Note</textarea>
+                                                                <textarea name="_Note" style="resize: none; white-space: pre-line; border: none">@ViewBag.Note</textarea>
                                                             </td>
                                                         </tr>
                                                     </table>
@@ -157,7 +156,6 @@
                                 </div>
                             </div>
                         </div>
-                    @*</form>*@
                     }        
                 <hr />
                 <form>
@@ -203,113 +201,11 @@
                     <div class="btn-info1">
                         <button id="btnOdering" class="btnInDetail">Note</button>
                         <button class="btnInDetail"><a asp-action ="CheckOut" asp-controller="cart">Check Out</a></button>
-                    </div>
-
-                    <!-- Modal get info Order -->
-                    @*<div id="ModalOrder2" class="modalInfo">
-                        <div class="modal-content1">
-                            <div class="menu-top">
-                                <span class="close1">&times;</span>
-                                <div style="display: flex">
-                                    <i class="fa-solid fa-pen-to-square"></i>
-                                    <p class="title-menu"><b>Infomaion Bill</b></p>
-                                </div>
-                            </div>
-                            <div class="center">
-                                <div class="detailFillForm">
-                                    <form asp-controller="cart" asp-action="Note" method="post">
-                                        <div class ="center">
-                                            <div>
-                                                <h3><b>Oderer</b></h3>
-                                                <div class="center">
-                                                    <table class="formFillDetail">
-                                                        <tr>
-                                                            <td><b>Oderer</b></td>
-                                                            <td><input type="text" value="@fullName" /></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><b>Phone number</b></td>
-                                                            <td><input type="text" value="@phonenumber" /></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><b>Address</b></td>
-                                                            <td><input type="text" value="@address" /></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><b>Note</b></td>
-                                                            <td>
-                                                                <textarea style="resize: none"></textarea>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-                                                <div class="btnConfirm">
-                                                    <button type="submit">Confirm</button>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                @*<h3><b>Receiver</b></h3>
-                                                <form method="post">
-                                                    <table class="formFillDetail">
-
-                                                        <tr>
-                                                            <td><b>Người nhận</b></td>
-                                                            <td><input type="text" name="receiveName" /></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><b>Số điện thoại</b></td>
-                                                            <td><input type="text" name="receivePhone" /></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><b>Địa chỉ</b></td>
-                                                            <td><input type="text" name="receiveAddress" /></td>
-                                                        </tr>
-                                                    </table>
-
-                                                    <button>Confirm</button>
-                                                </form>*@
-                                                @*@using (Html.BeginForm("CheckOutBill", "cart", FormMethod.Post))
-                                                {
-                                                    
-                                                } *@
-                                            </div>
-                                        </div>
-                                        @*<div class="btnConfirm">
-                                            <button>Confirm</button>
-                                        </div>*@
-                                    @*</form>*@
-                                </div>
-                               @* <div class="detailFillForm center">
-                                    <form method="post">
-                                        <h3><b>Receiver</b></h3>
-                                        <table class="formFillDetail">
-                                            <tr>
-                                                <td><b>Người nhận</b></td>
-                                                <td><input type="text" /></td>
-                                            </tr>
-                                            <tr>
-                                                <td><b>Số điện thoại</b></td>
-                                                <td><input type="text" /></td>
-                                            </tr>
-                                            <tr>
-                                                <td><b>Địa chỉ</b></td>
-                                                <td><input type="text" /></td>
-                                            </tr>
-                                        </table>
-                                    </form>
-                                </div>*@
-                            </div>
-                            @*<div class="btnConfirm">
-                                <button>Confirm</button>
-                            </div>*@
-                        </div>
-                    </div>
+                    </div>             
                 </div>
             </div>
         </div>
     </div>
-
-    
 
     <script src="~/js/ModalInfoOrder.js"></script>
 </section>

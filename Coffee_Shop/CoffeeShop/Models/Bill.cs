@@ -19,8 +19,6 @@ public partial class Bill
 
     public double? FeeShip { get; set; }
 
-    public string? CustomerReceiveName { get; set; }
-
     public string? PhoneNumber { get; set; }
 
     public DateTime? DateReceive { get; set; }

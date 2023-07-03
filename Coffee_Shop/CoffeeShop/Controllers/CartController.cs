@@ -124,13 +124,9 @@ namespace CoffeeShop.Controllers
             if (User.Identity.IsAuthenticated)
             {
                 userEmail = User.Identity.Name;
-            }
-                
+            } 
              
             Customer c= _ctx.Customers.OrderByDescending(x => x.Name == userEmail).Take(1).SingleOrDefault();
-
-            string parameter = TempData["Parameter"] as string;
-
             bill.CustomerId = c.Id;
             bill.PhoneNumber= c.PhoneNumber;
             bill.Address = c.Address;

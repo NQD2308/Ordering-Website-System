@@ -15,13 +15,11 @@ public partial class Product
 
     public string? Describe { get; set; }
 
-    public double? Discount { get; set; }
+    public double Discount { get; set; }
 
     public string? ImgPath { get; set; }
 
     public int? QuantitySaler { get; set; }
-
-    public string? ImgPhoto { get; set; }
 
     public virtual ICollection<DetailBill> DetailBills { get; set; } = new List<DetailBill>();
 

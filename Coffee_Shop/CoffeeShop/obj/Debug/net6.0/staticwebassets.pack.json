@@ -1,463 +1,467 @@
 {
   "Files": [
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\css\\ProductManage.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\css\\ProductManage.css",
       "PackagePath": "staticwebassets\\css\\ProductManage.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\css\\all.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\css\\all.css",
       "PackagePath": "staticwebassets\\css\\all.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\css\\colors.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\css\\colors.css",
       "PackagePath": "staticwebassets\\css\\colors.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\css\\grid.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\css\\grid.css",
       "PackagePath": "staticwebassets\\css\\grid.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\css\\login.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\css\\payment.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\css\\payment.css",
       "PackagePath": "staticwebassets\\css\\payment.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\css\\queries.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\css\\queries.css",
       "PackagePath": "staticwebassets\\css\\queries.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\css\\signup.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\css\\signup.css",
       "PackagePath": "staticwebassets\\css\\signup.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\css\\style_dashboard.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\css\\style_dashboard.css",
       "PackagePath": "staticwebassets\\css\\style_dashboard.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\css\\styles.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\css\\styles.css",
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\css\\styles_admin.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\css\\styles_admin.css",
       "PackagePath": "staticwebassets\\css\\styles_admin.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\favicon.ico",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\Blacktea.jpg",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\Blacktea.jpg",
       "PackagePath": "staticwebassets\\img\\Blacktea.jpg"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\CafeBreve.jpg",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\CafeBreve.jpg",
       "PackagePath": "staticwebassets\\img\\CafeBreve.jpg"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\Cafe_au_lait.jpg",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\Cafe_au_lait.jpg",
       "PackagePath": "staticwebassets\\img\\Cafe_au_lait.jpg"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\Cafe_latte.jpg",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\Cafe_latte.jpg",
       "PackagePath": "staticwebassets\\img\\Cafe_latte.jpg"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\Cappuccino.jpg",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\Cappuccino.jpg",
       "PackagePath": "staticwebassets\\img\\Cappuccino.jpg"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\ChocoShake.jpg",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\Caramel-cafe.jpg",
+      "PackagePath": "staticwebassets\\img\\Caramel-cafe.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\ChocoShake.jpg",
       "PackagePath": "staticwebassets\\img\\ChocoShake.jpg"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\CoffeeAndJazz_resized.jpg",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\CoffeeAndJazz_resized.jpg",
       "PackagePath": "staticwebassets\\img\\CoffeeAndJazz_resized.jpg"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\Dragontea.jpg",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\Dragontea.jpg",
       "PackagePath": "staticwebassets\\img\\Dragontea.jpg"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\Herbaltea.jpg",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\Herbaltea.jpg",
       "PackagePath": "staticwebassets\\img\\Herbaltea.jpg"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\NaraTea.jpg",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\NaraTea.jpg",
       "PackagePath": "staticwebassets\\img\\NaraTea.jpg"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\Orange_juice.jpg",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\Orange_juice.jpg",
       "PackagePath": "staticwebassets\\img\\Orange_juice.jpg"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\Strawbery_smoothy.jpg",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\Strawbery_smoothy.jpg",
       "PackagePath": "staticwebassets\\img\\Strawbery_smoothy.jpg"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\arabeca-coffee.png",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\arabeca-coffee.png",
       "PackagePath": "staticwebassets\\img\\arabeca-coffee.png"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\arabeca.jpg",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\arabeca.jpg",
       "PackagePath": "staticwebassets\\img\\arabeca.jpg"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\background-form.png",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\background-form.png",
       "PackagePath": "staticwebassets\\img\\background-form.png"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\backgroundtool-product1.png",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\backgroundtool-product1.png",
       "PackagePath": "staticwebassets\\img\\backgroundtool-product1.png"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\bida-service.png",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\bida-service.png",
       "PackagePath": "staticwebassets\\img\\bida-service.png"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\book-service.png",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\book-service.png",
       "PackagePath": "staticwebassets\\img\\book-service.png"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\capuchino.jpg",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\capuchino.jpg",
       "PackagePath": "staticwebassets\\img\\capuchino.jpg"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\chocoShake1.jpg",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\chocoShake1.jpg",
       "PackagePath": "staticwebassets\\img\\chocoShake1.jpg"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\coffee-map.png",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\coffee-map.png",
       "PackagePath": "staticwebassets\\img\\coffee-map.png"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\coffee-map1.png",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\coffee-map1.png",
       "PackagePath": "staticwebassets\\img\\coffee-map1.png"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\coffeemachine-product.png",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\coffeemachine-product.png",
       "PackagePath": "staticwebassets\\img\\coffeemachine-product.png"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\culi-coffee.png",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\culi-coffee.png",
       "PackagePath": "staticwebassets\\img\\culi-coffee.png"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\espresso.jpg",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\espresso.jpg",
       "PackagePath": "staticwebassets\\img\\espresso.jpg"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\latte-coffee-cup.jpg",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\latte-coffee-cup.jpg",
       "PackagePath": "staticwebassets\\img\\latte-coffee-cup.jpg"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\latte.jpg",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\latte.jpg",
       "PackagePath": "staticwebassets\\img\\latte.jpg"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\lemonade-fruit.jpg",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\lemonade-fruit.jpg",
       "PackagePath": "staticwebassets\\img\\lemonade-fruit.jpg"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\moka-coffee.png",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\moka-coffee.png",
       "PackagePath": "staticwebassets\\img\\moka-coffee.png"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\pic-title-1.png",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\pic-title-1.png",
       "PackagePath": "staticwebassets\\img\\pic-title-1.png"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\pic-title-2.png",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\pic-title-2.png",
       "PackagePath": "staticwebassets\\img\\pic-title-2.png"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\pic-title-3.png",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\pic-title-3.png",
       "PackagePath": "staticwebassets\\img\\pic-title-3.png"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\pic-title-4.png",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\pic-title-4.png",
       "PackagePath": "staticwebassets\\img\\pic-title-4.png"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\robusta-coffee.png",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\robusta-coffee.png",
       "PackagePath": "staticwebassets\\img\\robusta-coffee.png"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\staresso-product.png",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\staresso-product.png",
       "PackagePath": "staticwebassets\\img\\staresso-product.png"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\tea.jpg",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\tea.jpg",
       "PackagePath": "staticwebassets\\img\\tea.jpg"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\tool-product.png",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\tool-product.png",
       "PackagePath": "staticwebassets\\img\\tool-product.png"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\viewcafe.png",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\viewcafe.png",
       "PackagePath": "staticwebassets\\img\\viewcafe.png"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\viewcafe2.png",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\viewcafe2.png",
       "PackagePath": "staticwebassets\\img\\viewcafe2.png"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\viewcafe3.png",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\viewcafe3.png",
       "PackagePath": "staticwebassets\\img\\viewcafe3.png"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\viewnemu.png",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\img\\viewnemu.png",
       "PackagePath": "staticwebassets\\img\\viewnemu.png"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\js\\GoToTop.js",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\js\\GoToTop.js",
       "PackagePath": "staticwebassets\\js\\GoToTop.js"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\js\\GoToTopModal.js",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\js\\GoToTopModal.js",
       "PackagePath": "staticwebassets\\js\\GoToTopModal.js"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\js\\ModalInfoOrder.js",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\js\\ModalInfoOrder.js",
       "PackagePath": "staticwebassets\\js\\ModalInfoOrder.js"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\js\\ModalOrder.js",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\js\\ModalOrder.js",
       "PackagePath": "staticwebassets\\js\\ModalOrder.js"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\js\\SignUp.js",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\js\\SignUp.js",
       "PackagePath": "staticwebassets\\js\\SignUp.js"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

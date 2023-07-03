@@ -11,15 +11,11 @@ public partial class DetailBill
 
     public string ProductId { get; set; } = null!;
 
-    public double Suger { get; set; }
-
-    public double Ice { get; set; }
-
     public int Quantity { get; set; }
 
     public double Price { get; set; }
 
-    public decimal? Total { get; set; }
+    public decimal Total { get; set; }
 
     public virtual Bill Bill { get; set; } = null!;
 

@@ -35,8 +35,6 @@ public partial class OderDrinkingContext : DbContext
 
     public virtual DbSet<Genre> Genres { get; set; }
 
-    public virtual DbSet<HistoryBill> HistoryBills { get; set; }
-
     public virtual DbSet<Product> Products { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -131,7 +129,6 @@ public partial class OderDrinkingContext : DbContext
             entity.Property(e => e.BillId).HasColumnName("BillID");
             entity.Property(e => e.Address).HasMaxLength(100);
             entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
-            entity.Property(e => e.CustomerReceiveName).HasMaxLength(30);
             entity.Property(e => e.DateReceive).HasColumnType("smalldatetime");
             entity.Property(e => e.Note).HasMaxLength(100);
             entity.Property(e => e.PhoneNumber)
@@ -153,19 +150,11 @@ public partial class OderDrinkingContext : DbContext
                 .HasMaxLength(100)
                 .IsFixedLength();
             entity.Property(e => e.Address).HasMaxLength(100);
-            entity.Property(e => e.HistoryBillId)
-                .HasMaxLength(10)
-                .IsFixedLength()
-                .HasColumnName("HistoryBillID");
             entity.Property(e => e.Name).HasMaxLength(30);
             entity.Property(e => e.Password)
                 .HasMaxLength(100)
                 .IsFixedLength();
             entity.Property(e => e.PhoneNumber).HasMaxLength(10);
-
-            entity.HasOne(d => d.HistoryBill).WithMany(p => p.Customers)
-                .HasForeignKey(d => d.HistoryBillId)
-                .HasConstraintName("FK_Customer_HistoryBill");
         });
 
         modelBuilder.Entity<DetailBill>(entity =>
@@ -200,25 +189,6 @@ public partial class OderDrinkingContext : DbContext
             entity.Property(e => e.GenreName).HasMaxLength(50);
         });
 
-        modelBuilder.Entity<HistoryBill>(entity =>
-        {
-            entity.HasKey(e => e.BillId);
-
-            entity.ToTable("HistoryBill");
-
-            entity.Property(e => e.BillId)
-                .HasMaxLength(10)
-                .IsFixedLength()
-                .HasColumnName("BillID");
-            entity.Property(e => e.GenreId).HasColumnName("GenreID");
-            entity.Property(e => e.Note).HasMaxLength(100);
-            entity.Property(e => e.ProductsName).HasMaxLength(50);
-
-            entity.HasOne(d => d.Genre).WithMany(p => p.HistoryBills)
-                .HasForeignKey(d => d.GenreId)
-                .HasConstraintName("FK_HistoryBill_Genres");
-        });
-
         modelBuilder.Entity<Product>(entity =>
         {
             entity.Property(e => e.ProductId)
@@ -230,9 +200,6 @@ public partial class OderDrinkingContext : DbContext
             entity.Property(e => e.GenreId).HasColumnName("GenreID");
             entity.Property(e => e.ImgPath)
                 .HasMaxLength(50)
-                .IsUnicode(false);
-            entity.Property(e => e.ImgPhoto)
-                .HasMaxLength(100)
                 .IsUnicode(false);
             entity.Property(e => e.Price).HasColumnType("money");
             entity.Property(e => e.ProductName).HasMaxLength(50);

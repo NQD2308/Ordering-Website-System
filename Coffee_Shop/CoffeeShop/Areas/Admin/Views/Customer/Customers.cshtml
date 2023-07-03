@@ -31,15 +31,15 @@
 
 <div style="display:block; width:1260px">
     <div style="margin: 10px 40px; display:flex; justify-content: space-between">
-        <h2> Table list customer</h2>
-        <a class="btn" asp-action="CreateCustomer">Create new customer</a>
+        @*<h2> Table list customer</h2>
+        <a class="btn" asp-action="CreateCustomer">Create new customer</a>*@
     </div>
     <form style="margin-left: 30px; background: none;">
         <table class="table-of-customerlist">
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Full name</th>
+                    <th>Name</th>
                     <th>Phone number</th>
                     <th>Address</th>
                     <th><sup>Email</sup>/<sub>Account</sub></th>
@@ -56,8 +56,8 @@
                         <td class="left">@item.Address</td>
                         <td class="left">@item.Account</td>
                         <td>
-                            <a asp-action="EditCustomer" asp-route-id="@item.Id">Edit</a> ||
-                            <a asp-action="DeleteCustomer" asp-route-id="@item.Id">Delete</a>
+                            <a asp-action="EditCustomer" asp-route-id="@item.Id">Edit</a> @*||*@
+                            @*<a asp-action="DeleteCustomer" asp-route-id="@item.Id">Delete</a>*@
                         </td>
                     </tr>
                 }

@@ -11648,11 +11648,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\CoffeeShop.csproj",
+      "projectUniqueName": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\CoffeeShop.csproj",
       "projectName": "CoffeeShop",
-      "projectPath": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\CoffeeShop.csproj",
+      "projectPath": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\CoffeeShop.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "E:\\Hoa Sen University\\IT\\Phát Triển Web\\Project\\Coffee_Shop\\CoffeeShop\\obj\\",
+      "outputPath": "E:\\Projects\\Ordering-Website-System\\Coffee_Shop\\CoffeeShop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",

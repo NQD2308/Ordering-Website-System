@@ -74,9 +74,11 @@ table input {
     border-radius: 12px;
     border: none;
     background-color: rgb(86,55,39);
+    color: rgba(224, 176, 120, 0.7);
 }
 
 .btnLogin button a{
+    background-color: rgb(86,55,39);
     color:rgb(224, 176, 120);
     text-decoration: none;
     transition: all 0.25s ease-in;

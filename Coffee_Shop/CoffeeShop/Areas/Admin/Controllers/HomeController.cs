@@ -51,7 +51,7 @@ namespace CoffeeShop.Areas.Admin.Controllers
             ViewBag.GenreId = new SelectList(genreList, "GenreId", "GenreName");
 
             var allData = _productRepository.FindAllProductById(id1);
-            int itemsPerPage = 5; // Số mục muốn hiển thị cho mỗi trang
+            int itemsPerPage = 10; // Số mục muốn hiển thị cho mỗi trang
 
             // Lấy tổng số mục từ nguồn dữ liệu của bạn (ví dụ: cơ sở dữ liệu)
             int totalItems = allData.Count();
@@ -125,7 +125,10 @@ namespace CoffeeShop.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult UpdateProduct(Product product)
         {
-            if (ModelState.IsValid)
+            _productRepository.Update(product);
+            return RedirectToAction("Products", "Home");
+
+            /*if (ModelState.IsValid)
             {
                 bool isProductNameExist = _productRepository.CheckNameProduct(product.ProductName);
                 if (isProductNameExist)
@@ -146,8 +149,8 @@ namespace CoffeeShop.Areas.Admin.Controllers
                 var genreList = _genreRepository.GetAll();
                 ViewBag.GenreId = new SelectList(genreList, "GenreId", "GenreName");
                 return View("EditProduct");
-            }
-                
+            }*/
+
         }
         public IActionResult DeleteProduct(string id)
         {
